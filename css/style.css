@@ -1171,10 +1171,10 @@ border: 1px solid #909090;
     text-align: center;
   }
 
-    .hero-left{
+  .hero-left{
     margin-top: 5px;
   }
-  
+
   .hero-left h1 {
     font-size: 56px;
   }
@@ -1238,6 +1238,31 @@ border: 1px solid #909090;
     right: -15px;
   }
 
+    .subscribe-container {
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .subscribe-img img {
+    max-width: 180px;
+  }
+
+  .subscribe-content h3 {
+    font-size: 18px;
+  }
+
+  .subscribe-content p {
+    font-size: 13px;
+  }
+
+  #subscribe-btn {
+    padding: 8px 16px;
+  }
+
+  #email-input {
+    padding: 8px 12px;
+  }
+
   .footer-container {
         justify-content: center;
     }
@@ -1251,6 +1276,9 @@ border: 1px solid #909090;
 
 
 @media (max-width: 768px) {
+  .hero-left{
+    margin-top: 15px;
+  }
   .hero {
     padding: 30px 20px;
   }
@@ -1269,11 +1297,6 @@ border: 1px solid #909090;
     gap: 25px;
   }
 
-  .hero-left p {
-    font-size: 15px;
-  }
-
-  
   .card {
     width: 90%;
     margin: 0 auto;
@@ -1399,13 +1422,14 @@ border: 1px solid #909090;
 
 @media (max-width: 480px) {
   .hero {
-    padding: 20px 15px;
+    padding: 20px 5px;
   }
 
-  .badge{
-    margin-top: 20px
+  .hero-right{
+    max-width: 95%;
+    margin: 0 auto;
   }
-  
+
   .hero-left h1 {
     font-size: 32px;
   }
@@ -1419,7 +1443,11 @@ border: 1px solid #909090;
     width: 100%;
     margin-bottom: 15px;
   }
-    .hero-left{
+
+  .hero-left{
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
     margin-top: 25px;
   }
 
@@ -1495,6 +1523,32 @@ border: 1px solid #909090;
 
   .arrow-btn2 {
     display: none;
+  }
+
+  .subscribe-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding: 25px 15px;
+    height: auto;
+  }
+
+  .subscribe-content h3 {
+    font-size: 16px;
+  }
+
+  .subscribe-content p {
+    font-size: 12px;
+  }
+
+  #email-input,
+  #subscribe-btn {
+    font-size: 14px;
+  }
+
+  .subscribe-img img {
+    max-width: 140px;
   }
 
   .testimonial-image img {
@@ -1604,6 +1658,28 @@ border: 1px solid #909090;
     height: 45px;
   }
 
+    .subscribe-container {
+    padding: 20px 10px;
+  }
+
+  .subscribe-img img {
+    max-width: 120px;
+  }
+
+  .subscribe-content h3 {
+    font-size: 15px;
+  }
+
+  .subscribe-content p {
+    font-size: 11px;
+  }
+
+  #email-input,
+  #subscribe-btn {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
   .footer {
         padding: 30px 15px;
     }
@@ -1617,14 +1693,5 @@ border: 1px solid #909090;
         font-size: 13px;
         padding: 6px 10px;
     }
-
-  
 }
-
-
-
-
-
-
-
 
