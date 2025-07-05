@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH Food UI</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header_wrapper">
+        <div class="header_el">
+            <div class="header-logo">
+                <a href="">
+                <img src="./images/Untitled-1 1.svg" alt="logo">
+                </a>
+            </div>
+                <nav class="navigation">
+                <ul class="header_ul">
+                    <li class="ul_el"><a class="cl" href="#">Home</a></li>
+                    <li class="ul_el"><a class="cl" href="#">Contact</a></li>
+                    <li class="ul_el"><a class="cl" href="#">Menu</a></li>
+                    <li class="ul_el"><a class="cl" href="#">Shop</a></li>
+                </ul>
+                </nav>
+            <div class="register_box first-register">
+                Register
+            </div>
+
+            <div class="burger" id="burger">&#9776;</div>
+
+             <div class="mobile-menu" id="mobile-menu">
+               <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                  <button class="register_box">Register</button>
+              </div>
+        </div>
+    </header>
+
+
+    <!-- რეგისტრაციის ფანჯარა -->
+<div class="modal" id="registerModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </div>
+</div>
+
+
+
+    <section class="hero">
+  <div class="hero-left">
+    <span class="badge">🏍️ Bike Delivery</span>
+    <h1 class="h1">The Fastest <br> Delivery In <span class="highlight">Your City</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo sed proin amet a vestibulum enim volutpat lacus.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary">Order Now</button>
+      <button class="btn-outline">
+        ▶ Order Process
+      </button>
+    </div>
+  </div>
+
+   <img class="middle_img" src="./images/Abstract.svg" alt="Arrow" class="hero-arrow" />
+
+  <div class="hero-right">
+    <div class="card">
+      <img src="./images/burger_sandwich_PNG4135 1.svg" alt="Burger">
+      <h3>Burger</h3>
+      <p>Mushroom Sauce</p>
+      <div class="price-row">
+    <button class="arrow-btn light">
+      <span class="arrow">&larr;</span>
+    </button>
+    <span class="pricee">$5.15</span>
+    <button class="arrow-btn dark">
+      <span class="arrow">&rarr;</span>
+    </button>
+  </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/Combo-Junk-Food-PNG-Image 2.svg" alt="Food Combo">
+      <h3>Food Combo</h3>
+      <p>Mushroom Sauce</p>
+      <div class="price-row">
+    <button class="arrow-btn light">
+      <span class="arrow">&larr;</span>
+    </button>
+    <span class="pricee">$9.15</span>
+    <button class="arrow-btn dark">
+      <span class="arrow">&rarr;</span>
+    </button>
+  </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/pizza-png-12 1.svg" alt="Pizza">
+      <h3>Pizza</h3>
+      <p>Mushroom Sauce</p>
+      <div class="price-row">
+    <button class="arrow-btn light">
+      <span class="arrow">&larr;</span>
+    </button>
+    <span class="pricee">$6.15</span>
+    <button class="arrow-btn dark">
+      <span class="arrow">&rarr;</span>
+    </button>
+  </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/purepng 1.svg" alt="Cake">
+      <h3>Cake</h3>
+      <p>Mushroom Sauce</p>
+      <div class="price-row">
+    <button class="arrow-btn light">
+      <span class="arrow">&larr;</span>
+    </button>
+    <span class="pricee">$7.15</span>
+    <button class="arrow-btn dark">
+      <span class="arrow">&rarr;</span>
+    </button>
+  </div>
+    </div>
+  </div>
+</section>
+
+
+ <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <img src="./images/time.svg" alt="Working Time">
+        </div>
+        <div class="contact-content">
+         <h3>Working time</h3>
+         <p>Today <span class="highlight">10:00am - 10:00pm</span></p>
+        </div>
+      </div>
+            
+      <div class="divider"></div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <img src="./images/8568078.png" alt="Location">
+        </div>
+        <div class="contact-content">
+          <h3>Our Location</h3>
+          <p>Washington, D.C., DC, USA</p>
+        </div>
+      </div>
+            
+      <div class="divider"></div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <img src="./images/phone-icon.png" alt="Phone">
+        </div>
+        <div class="contact-content">
+          <h3>Phone Number</h3>
+          <p>+0123 456 7891</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="popular-items">
+    <div class="subtitle">Product</div>
+    <h2 class="product-items-title">Most Popular Items</h2>
+
+    <div class="product-grid">
+      <div class="product">
+        <img src="./images/gyro-sandwich1-1650490757 1.svg" alt="Gyro">
+        <div class="product-content">
+          <div class="product-title">Gyro Sandwich <span class="star">★ 4.9</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$15.00</div>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="./images/beef-enchiladas_4004 1.svg" alt="Enchilade">
+        <div class="product-content">
+          <div class="product-title">Enchilade <span class="star">★ 5.0</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$25.50</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="./images/Mask group.svg" alt="Green Beans">
+        <div class="product-content">
+          <div class="product-title">Green Beans <span class="star">★ 4.9</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$12.00</div>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="./images/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158 1.svg" alt="Pizza">
+        <div class="product-content">
+          <div class="product-title">Pizza <span class="star">★ 5.0</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$18.50</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="./images/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__10__Chicken-Pot-Pie-LEAD-1-f01cc53ba4dc4b50b91de3aa1e2ef62c 1.svg" alt="Chicken Pot Pie">
+        <div class="product-content">
+          <div class="product-title">Chicken Pot Pie <span class="star">★ 4.9</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$25.00</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="./images/thai-tossed-green-salad-recipe-3217707-hero-01-8782b0ef1cbd404680af8a51769140ba 1.svg" alt="Green Salad">
+        <div class="product-content">
+          <div class="product-title">Green Salad <span class="star">★ 4.9</span></div>
+          <button class="add-to-cart">Add To Cart</button>
+          <div class="price">$15.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="see-more">
+      <button>See More Product ➤</button>
+    </div>
+  </section>
+
+
+  <section class="why-choose">
+  <p class="section-subtitle">Services</p>
+  <h2 class="section-title">Why Choose Our Favorite Food</h2>
+
+  <div class="choose-boxes">
+    <div class="choose-card card1">
+      <div class="choose-icon">
+        <img src="./images/Food.svg" alt="Quality Food">
+      </div>
+      <h3>Qualityfull Food</h3>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+    </div>
+
+    <div class="choose-card">
+      <div class="choose-icon">
+        <img src="./images/food2.svg" alt="Healthy Food">
+      </div>
+      <h3>Healthy Food</h3>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+    </div>
+
+    <div class="choose-card card3">
+      <div class="choose-icon">
+        <img src="./images/delivery.svg" alt="Fast Delivery">
+      </div>
+      <h3>Fast Delivery</h3>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+    </div>
+  </div>
+  </section>
+
+
+
+  <section class="work-section">
+  <p class="section-subtitle">How to work</p>
+  <h2 class="section-title">Food Us An Important Part Of A Balanced Diet</h2>
+
+  <div class="work-steps">
+    <div class="work-step left">
+      <img src="./images/91374 1.svg" alt="Choose">
+      <h3>CHOOSE <span class="dot">•</span></h3>
+      <p>Do you want to lose weight, exercise, adhere to a therapeutic diet? Our dietitian will help you with choosing the right program!</p>
+    </div>
+
+    <div class="work-step">
+      <h3><span class="dot">•</span> PREPARE FOOD <span class="dot">•</span></h3>
+      <p>Do you want to lose weight, exercise, adhere to a therapeutic diet? Our dietitian will help you with choosing the right program!</p>
+      <img src="./images/Fried-Chicken-PNG-Image 1.svg" alt="Prepare Food">
+    </div>
+
+    <div class="work-step right">
+      <img src="./images/Blank-Package-Transparent-PNG 1.svg" alt="Deliver">
+      <h3><span class="dot">•</span> DELIVER</h3>
+      <p>Do you want to lose weight, exercise, adhere to a therapeutic diet? Our dietitian will help you with choosing the right program!</p>
+    </div>
+  </div>
+
+  <!-- Dashed curved SVG background -->
+  <!-- <div class="curved-lines"></div> -->
+</section>
+
+
+<section class="testimonial-section">
+  <p class="section-subtitle">Testimonials</p>
+  <h2 class="section-title">Our Happy Client Says</h2>
+
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <button class="arrow-btn2 left">&#8592;</button>
+
+      <div class="testimonial-content">
+        <div class="user">
+          <img src="./images/indoeli.svg" alt="Client" class="client-img" />
+          <div class="user-content">
+            <h3>Willians Jhone</h3>
+            <p class="client-position">CEO & Co Founder</p>
+          </div>
+        </div>
+        <div class="testimonial-p">
+          <p class="testimonial-text">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisl tincidunt adipiscing dictumst blandit hac. Lectus cras velit sed dignissim ac, aliquet. Metus egestas habitant feugiat feugiat neque ultrices nunc, dolor egestas mus.”
+          </p>
+        </div>
+      </div>
+
+      <button class="arrow-btn2 right">&#8594;</button>
+    </div>
+
+    <div class="testimonial-image">
+      <img src="./images/3-36085_fast-food-banner-junk-food-transparent-background 1.svg" alt="Burger">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="subscribe-section">
+  <div class="subscribe-container">
+    <div class="subscribe-img">
+      <img src="./images/burger_sandwich_PNG4135 1.svg" alt="burger">
+    </div>
+    <div class="subscribe-content">
+      <h3>Subscribe To Our Newsletter</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus mus sem ut urna venenatis varius.
+      </p>
+      <form id="subscribe-form">
+        <input type="email" id="email-input" placeholder="Type your email..." required>
+        <button type="submit" id="subscribe-btn">SUBSCRIBE</button>
+      </form>
+       <p class="subscribe-msg" id="subscribe-msg"></p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-column">
+      <div class="logo">
+        <img src="./images/Untitled-1 1.svg" alt="Logo" />
+      </div>
+      <p class="footer-logo-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo libero viverra dapibus odio sit malesuada in quis. Arcu tristique elementum viverra integer id.</p>
+      <div class="social-icons">
+        <a href="#"><img src="./images/Icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./images/Icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="./images/Icons/Linked_In.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="./images/Icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Opening Restaurant</h4>
+      <div class="footer-p">
+      <p>Sat-Wed: 09:00am-10:00PM</p>
+      <p>Thursday: 09:00am-11:00PM</p>
+      <p>Friday: 09:00am-08:00PM</p>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>User Link</h4>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Order Delivery</p>
+      <p>Payment & Tax</p>
+      <p>Terms of Services</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>1234 Country Club Ave</p>
+      <p>NC 123456, London, UK</p>
+      <p>+0123 456 7891</p>
+      <div class="email-input">
+        <input type="email" id="email1" placeholder="Enter your email..." />
+        <button onclick="submitEmail()">➤</button>
+        <span id="message" class="message-text"></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Cookie Notification -->
+<div id="cookie-notice" class="cookie-notice">
+  <p>We use cookies to improve your experience.</p>
+  <button id="acceptCookies">Accept</button>
+</div>
+
+
+
+
+<button id="scrollTopBtn" class="scroll-top">↑</button>
+
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
