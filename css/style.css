@@ -1393,6 +1393,10 @@ border: 1px solid #909090;
     padding: 20px 15px;
   }
 
+  .badge{
+    margin-top: 20px
+  }
+  
   .hero-left h1 {
     font-size: 32px;
   }
