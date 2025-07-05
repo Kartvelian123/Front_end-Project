@@ -1171,6 +1171,10 @@ border: 1px solid #909090;
     text-align: center;
   }
 
+    .hero-left{
+    margin-top: 5px;
+  }
+  
   .hero-left h1 {
     font-size: 56px;
   }
@@ -1265,6 +1269,11 @@ border: 1px solid #909090;
     gap: 25px;
   }
 
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  
   .card {
     width: 90%;
     margin: 0 auto;
@@ -1409,6 +1418,9 @@ border: 1px solid #909090;
   .btn-outline {
     width: 100%;
     margin-bottom: 15px;
+  }
+    .hero-left{
+    margin-top: 25px;
   }
 
   .hero-right {
